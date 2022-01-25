@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>header}}
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+  <style>
+    
+body{
+  background-color: #e1e1ff;
+}
+  </style>
+  </style>
+</head>
+<body>
+  {{>navbar}}
+
+  <div class="banner-area">
+
+    
+       <section class="vh-100" >
+      <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <h3 class="mb-5">Sign in</h3>
+
+
+          <div class="container">
+            <form action="/login" method="post">
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter email" name="email" class="form-control form-control-lg" required>
+            <br>
+
+            <label for="pass"><b>Password</b></label>
+            <input type="password" class="form-control form-control-lg" placeholder="Enter Password" name="pass" required>
+              <br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <br>
+            <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;" type="submit">submit</button>
+            </form>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   
+  </div>
+
+</body>
+</html>

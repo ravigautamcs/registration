@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>header}}
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+  <style>
+    
+body{
+  background-color: #e1e1ff;
+}
+  </style>
+</head>
+<body>
+  {{>navbar}}
+  <div class="banner-area">
+
+    <form action="/register" method="post">
+<section class="vh-100" >
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <h3 class="mb-5">Sign Up</h3>
+
+            <div class="form-outline mb-4">
+<input type="text" name="firstname" class="form-control form-control-lg"/> 
+    <label> Firstname </label>         
+ </div>
+<div class="form-outline mb-4"> 
+<input type="text" name="lastname" class="form-control form-control-lg"/> 
+<label> Lastname: </label>         
+</div>  
+   
+  
+<div class="form-outline mb-4"> 
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" name="gender" value="male"/> Male <br>  
+<input type="radio" name="gender" value="female"/> Female <br>  
+<input type="radio" name="gender" value="other"/> Other   
+</div>
+
+<label>   
+Phone :  
+</label>
+<div class="form-outline mb-4"> 
+<input type="text" name="phone" class="form-control form-control-lg" size="10"/> 
+</div>  
+Email:  
+<input type="email" id="email" class="form-control form-control-lg" name="email"/>    
+Password:  
+<input type="Password" id="pass" class="form-control form-control-lg" name="pass">    
+
+Re-type password:  
+<input type="Password" id="repass" class="form-control form-control-lg" name="repass"> 
+<br>
+<button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;" type="submit">submit</button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+    </form>
+
+  </div>
+</body>
+</html>
